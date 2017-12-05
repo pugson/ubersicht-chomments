@@ -1,6 +1,5 @@
 # Refresh time (default: 3 minutes)
 refreshFrequency: '3m'
-token: 'YOUR_AUTHORIZATION_TOKEN'
 
 # Body Style
 style: """
@@ -144,20 +143,21 @@ update: (output, domEl) ->
     
     return
 
-afterRender: (domEl, token) ->
+afterRender: (domEl) ->
   postChomment = (self, message) ->
+    token = 'YOUR_AUTHORIZATION_TOKEN'
+    
     $.ajax
       url: "https://api.screenhole.net/chomments",
       beforeSend: (xhr) ->
-        xhr.setRequestHeader("Authorization", "Bearer " + token + ""); 
+        xhr
+          .setRequestHeader 'Authorization', 'Bearer ' + token 
       type: 'POST'
       dataType: 'json'
       contentType: 'application/json;charset=UTF-8'
       processData: false
       data: '{"chomment":{"message":"' + message + '"}}'
-      success: (data) ->
-        update()
-      error: ->
+      error: (error) ->
         $ '#chomments'
           .html '<h2>Error, mate...</h2>'
 
