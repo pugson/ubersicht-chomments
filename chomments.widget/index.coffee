@@ -1,10 +1,8 @@
-# Lovingly crafted by Rohan Likhite [rohanlikhite.com]
-
 # Refresh time (default: 3 minutes)
 refreshFrequency: '3m'
 token: 'YOUR_AUTHORIZATION_TOKEN'
 
-#Body Style
+# Body Style
 style: """
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'
   font-size: 16px
@@ -106,7 +104,7 @@ style: """
 
 """
 
-#Render function
+# Render function
 render: -> """
   <div class='container'>
     <form class='talkbox'>
