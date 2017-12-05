@@ -117,15 +117,15 @@ render: -> """
   </div>
 """
 
-getChomments: (handleData) ->
-  $.ajax
-    url: 'https://api.screenhole.net/chomments?page=1'
-    success: (data) ->
-      handleData data
-      return
-  return
-
 update: (output, domEl) ->
+  getChomments = (handleData) ->
+    $.ajax
+      url: 'https://api.screenhole.net/chomments?page=1'
+      success: (data) ->
+        handleData data
+        return
+    return
+
   getChomments (output) ->
     data = output.chomments
     recentChomments = data.map (chomment) -> """
@@ -138,7 +138,6 @@ update: (output, domEl) ->
       </div> 
       """
 
-    # localStorage.setItem "chomments", recentChomments
     $ '#chomments'
       .html recentChomments
 
