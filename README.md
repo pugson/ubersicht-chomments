@@ -9,5 +9,13 @@ Works with a dark background for now!
 ## Download and how-to
 Over at the [Releases](https://github.com/pugson/ubersicht-chomments/releases/) page.
 
+⚠️ You can interact with this widget by holding down your **Interaction Shortcut** key that you set up in Übersicht.
+
+- Hold down the key and scroll through the feed.
+- Hold down the key and click once, to focus on the widget.
+- Hold down the key and click twice on the purple input to focus. Start typing and hit enter to send.
+
+![img](http://share.wojtek.im/8FTEdL/jSxCloR6+)
+
 ## Preview
 ![preview](http://share.wojtek.im/QOGaf9/2tuE5G26+)
