@@ -1,3 +1,5 @@
+ℹ️ FYI, this is probably broken and doesn't work anymore.
+
 # ubersicht-chomments
 Get those sweet chomments from [screenhole.net](https://screenhole.net) on your desktop 🧛️
 
